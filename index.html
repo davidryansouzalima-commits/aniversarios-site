@@ -3,326 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Festas Econômicas | Eventos Incríveis</title>
+<title>Seu Negócio Premium</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#f8f9fa;
-color:#333;
-}
-
-nav{
-position:fixed;
-width:100%;
-background:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
-z-index:1000;
-}
-
-nav h2{
-font-family:'Playfair Display',serif;
-}
-
-nav ul{
-display:flex;
-gap:25px;
-list-style:none;
-}
-
-nav ul li a{
-text-decoration:none;
-color:#333;
-font-weight:500;
-transition:0.3s;
-}
-
-nav ul li a:hover{
-color:#ff2e93;
-}
-
-.hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url('https://images.unsplash.com/photo-1513151233558-d860c5398176') center/cover no-repeat;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-padding:20px;
-}
-
-.hero h1{
-font-size:60px;
-font-family:'Playfair Display',serif;
-}
-
-.hero p{
-margin-top:20px;
-font-size:20px;
-max-width:600px;
-}
-
-.btn{
-margin-top:30px;
-padding:15px 40px;
-background:#ff2e93;
-color:white;
-text-decoration:none;
-border-radius:50px;
-font-weight:600;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#e60073;
-}
-
-section{
-padding:100px 10%;
-text-align:center;
-}
-
-section h2{
-font-size:40px;
-margin-bottom:60px;
-font-family:'Playfair Display',serif;
-}
-
-.cards{
-display:flex;
-flex-wrap:wrap;
-gap:30px;
-justify-content:center;
-}
-
-.card{
-background:white;
-padding:40px;
-width:300px;
-border-radius:20px;
-box-shadow:0 15px 30px rgba(0,0,0,0.08);
-transition:0.4s;
-}
-
-.card:hover{
-transform:translateY(-15px);
-}
-
-.pricing{
-display:flex;
-flex-wrap:wrap;
-gap:30px;
-justify-content:center;
-}
-
-.price-box{
-background:white;
-padding:40px;
-width:320px;
-border-radius:20px;
-box-shadow:0 15px 30px rgba(0,0,0,0.08);
-}
-
-.price-box h3{
-font-size:28px;
-margin-bottom:20px;
-}
-
-.price{
-font-size:35px;
-color:#ff2e93;
-margin-bottom:20px;
-}
-
-.gallery{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
-}
-
-.gallery img{
-width:300px;
-border-radius:20px;
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
-transition:0.4s;
-}
-
-.gallery img:hover{
-transform:scale(1.05);
-}
-
-.testimonial{
-max-width:800px;
-margin:auto;
-font-style:italic;
-}
-
-.faq{
-text-align:left;
-max-width:800px;
-margin:auto;
-}
-
-.faq h4{
-margin-top:20px;
-color:#ff2e93;
-}
-
-.support{
-background:#ff2e93;
-color:white;
-padding:80px 10%;
-}
-
-.support a{
-color:white;
-font-weight:bold;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:40px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25d366;
-padding:18px;
-border-radius:50%;
-color:white;
-text-decoration:none;
-font-size:20px;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
-
-@media(max-width:900px){
-nav ul{display:none;}
-.hero h1{font-size:40px;}
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
 </head>
 
 <body>
 
-<nav>
-<h2>Festas Econômicas</h2>
-<ul>
-<li><a href="#servicos">Serviços</a></li>
-<li><a href="#pacotes">Pacotes</a></li>
-<li><a href="#galeria">Galeria</a></li>
-<li><a href="#faq">FAQ</a></li>
-<li><a href="#contato">Contato</a></li>
-</ul>
-</nav>
+<header>
+    <div class="logo">SEU NEGÓCIO</div>
+    <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#planos">Planos</a>
+        <a href="#seguranca">Segurança</a>
+        <a href="#contato">Contato</a>
+        <a href="#instagram">Instagram</a>
+    </nav>
+</header>
 
-<div class="hero">
-<h1>Eventos Bonitos Sem Gastar Muito</h1>
-<p>Transformamos aniversários simples em momentos inesquecíveis com organização profissional e preço acessível.</p>
-<a href="https://wa.me/5571982559953" class="btn">Solicitar Orçamento</a>
-</div>
-
-<section id="servicos">
-<h2>Nossos Serviços</h2>
-<div class="cards">
-<div class="card">
-<h3>Decoração Infantil</h3>
-<p>Temas personalizados, montagem completa e organização total.</p>
-</div>
-<div class="card">
-<h3>Eventos Adultos</h3>
-<p>Festas elegantes com excelente custo-benefício.</p>
-</div>
-<div class="card">
-<h3>Planejamento Completo</h3>
-<p>Cuidamos de cada detalhe para você não se preocupar.</p>
-</div>
-</div>
+<section class="hero">
+    <h1>Transformamos ideias em negócios digitais de alto nível</h1>
+    <p>Sites profissionais, seguros, rápidos e com design premium.</p>
+    <button>Solicitar Orçamento</button>
 </section>
 
-<section id="pacotes">
-<h2>Pacotes</h2>
-<div class="pricing">
-<div class="price-box">
-<h3>Básico</h3>
-<p class="price">A partir de R$ 499</p>
-<p>Decoração simples + montagem</p>
-</div>
-<div class="price-box">
-<h3>Intermediário</h3>
-<p class="price">A partir de R$ 899</p>
-<p>Decoração completa + organização</p>
-</div>
-<div class="price-box">
-<h3>Premium</h3>
-<p class="price">A partir de R$ 1.499</p>
-<p>Evento completo com personalização</p>
-</div>
-</div>
+<section id="servicos" class="section">
+    <h2>Nossos Serviços</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Criação de Sites Profissionais</h3>
+            <ul>
+                <li>Design exclusivo</li>
+                <li>Alta resolução 4K</li>
+                <li>Layout responsivo</li>
+                <li>Otimização SEO</li>
+                <li>Integração com redes sociais</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Landing Pages de Conversão</h3>
+            <ul>
+                <li>Estrutura estratégica</li>
+                <li>Copy persuasiva</li>
+                <li>Botões de ação</li>
+                <li>Integração com WhatsApp</li>
+                <li>Analytics integrado</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>E-commerce Completo</h3>
+            <ul>
+                <li>Catálogo ilimitado</li>
+                <li>Pagamento online</li>
+                <li>Área do cliente</li>
+                <li>Painel administrativo</li>
+                <li>Segurança SSL</li>
+            </ul>
+        </div>
+
+    </div>
 </section>
 
-<section id="galeria">
-<h2>Galeria</h2>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84">
-<img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d">
-<img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622">
-</div>
+<section id="planos" class="section dark">
+    <h2>Planos e Investimento</h2>
+
+    <div class="cards">
+
+        <div class="card premium">
+            <h3>Plano Essencial</h3>
+            <p>Site institucional profissional</p>
+            <span>R$ 1.500</span>
+        </div>
+
+        <div class="card premium">
+            <h3>Plano Profissional</h3>
+            <p>Site + SEO + Integrações</p>
+            <span>R$ 3.000</span>
+        </div>
+
+        <div class="card premium">
+            <h3>Plano Premium</h3>
+            <p>Site completo + Loja + Automação</p>
+            <span>R$ 5.000</span>
+        </div>
+
+    </div>
 </section>
 
-<section>
-<h2>Depoimentos</h2>
-<div class="testimonial">
-<p>"Minha festa ficou maravilhosa e paguei muito menos do que imaginava. Atendimento excelente!"</p>
-</div>
+<section id="seguranca" class="section">
+    <h2>Segurança e Confiabilidade</h2>
+    <p>Todos os nossos sites incluem:</p>
+    <ul class="security-list">
+        <li>Certificado SSL (HTTPS)</li>
+        <li>Proteção contra ataques</li>
+        <li>Backup automático</li>
+        <li>Hospedagem segura</li>
+        <li>LGPD aplicada</li>
+    </ul>
 </section>
 
-<section id="faq">
-<h2>Perguntas Frequentes</h2>
-<div class="faq">
-<h4>Quanto tempo antes devo contratar?</h4>
-<p>Recomendamos pelo menos 30 dias de antecedência.</p>
-
-<h4>Vocês fazem parcelamento?</h4>
-<p>Sim, oferecemos condições facilitadas.</p>
-
-<h4>Atendem toda Salvador?</h4>
-<p>Sim, e região metropolitana.</p>
-</div>
+<section id="instagram" class="section dark">
+    <h2>Nosso Instagram</h2>
+    <p>Siga nosso perfil para acompanhar projetos e novidades.</p>
+    <a href="https://instagram.com/seuusuario" target="_blank" class="insta-btn">Visitar Instagram</a>
 </section>
 
-<section class="support" id="contato">
-<h2>Suporte</h2>
-<p>Precisa de ajuda imediata? Fale direto conosco no WhatsApp:</p>
-<p><a href="https://wa.me/5571982559953">55 71 98255-9953</a></p>
-</section>
+<section id="contato" class="section">
+    <h2>Fale Diretamente com os Donos</h2>
 
-<a href="https://wa.me/5571982559953" class="whatsapp">W</a>
+    <div class="chat-box">
+        <textarea placeholder="Digite sua mensagem..."></textarea>
+        <button>Enviar</button>
+    </div>
+
+    <div class="whatsapp">
+        <a href="https://wa.me/5599999999999" target="_blank">Conversar no WhatsApp</a>
+    </div>
+</section>
 
 <footer>
-<p>© 2026 Festas Econômicas - Todos os direitos reservados</p>
+    <p>© 2026 Seu Negócio Premium | Todos os direitos reservados</p>
 </footer>
 
 </body>
